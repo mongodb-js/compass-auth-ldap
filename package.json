@@ -1,7 +1,7 @@
 {
   "name": "@mongodb-js/compass-auth-ldap",
   "productName": "Compass LDAP Auth Role",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Provides LDAP Connectivity to the Connection Plugin",
   "main": "index.js",
   "apiVersion": "2.0.0",
