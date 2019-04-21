@@ -15,6 +15,10 @@ class LDAP extends React.Component {
     isValid: PropTypes.bool
   };
 
+  static defaultProps = {
+    currentConnection: {}
+  }
+
   /**
    * Handle the username change.
    *
