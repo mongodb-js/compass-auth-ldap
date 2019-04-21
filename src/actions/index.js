@@ -1,4 +1,4 @@
-const Reflux = require('reflux');
+import Reflux from 'reflux';
 
 /**
  * The actions for changing LDAP values.
@@ -8,4 +8,4 @@ const LDAPActions = Reflux.createActions([
   'onLDAPPasswordChanged'
 ]);
 
-module.exports = LDAPActions;
+export default LDAPActions;
