@@ -6,7 +6,7 @@ import Actions from 'actions';
  * @param {String} username - The user name.
  */
 function onLDAPUsernameChanged(username) {
-  this.state.currentConnection.ldap_username = username;
+  this.state.currentConnection.ldapUsername = username;
   this.trigger(this.state);
 }
 
@@ -16,7 +16,7 @@ function onLDAPUsernameChanged(username) {
  * @param {String} password - The password.
  */
 function onLDAPPasswordChanged(password) {
-  this.state.currentConnection.ldap_password = password;
+  this.state.currentConnection.ldapPassword = password;
   this.trigger(this.state);
 }
 

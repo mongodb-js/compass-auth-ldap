@@ -52,7 +52,7 @@ class LDAP extends React.Component {
    */
   getUsernameError() {
     const connection = this.props.currentConnection;
-    if (!this.props.isValid && isEmpty(connection.ldap_username)) {
+    if (!this.props.isValid && isEmpty(connection.ldapUsername)) {
       return 'Username is required';
     }
   }
@@ -64,7 +64,7 @@ class LDAP extends React.Component {
    */
   getPasswordError() {
     const connection = this.props.currentConnection;
-    if (!this.props.isValid && isEmpty(connection.ldap_password)) {
+    if (!this.props.isValid && isEmpty(connection.ldapPassword)) {
       return 'Password is required';
     }
   }
@@ -82,7 +82,7 @@ class LDAP extends React.Component {
           name="ldap-username"
           error={this.getUsernameError()}
           changeHandler={this.onUsernameChanged.bind(this)}
-          value={this.props.currentConnection.ldap_username || ''}
+          value={this.props.currentConnection.ldapUsername || ''}
           linkHandler={this.onLDAPHelp.bind(this)} />
         <FormInput
           label="Password"
@@ -90,7 +90,7 @@ class LDAP extends React.Component {
           type="password"
           error={this.getPasswordError()}
           changeHandler={this.onPasswordChanged.bind(this)}
-          value={this.props.currentConnection.ldap_password || ''} />
+          value={this.props.currentConnection.ldapPassword || ''} />
       </div>
     );
   }

@@ -6,8 +6,8 @@ describe('<LDAP />', () => {
   describe('#render', () => {
     context('when the form is valid', () => {
       const connection = {
-        ldap_username: 'username',
-        ldap_password: 'password'
+        ldapUsername: 'username',
+        ldapPassword: 'password'
       };
       const component = mount(
         <LDAP currentConnection={connection} isValid />
@@ -29,8 +29,8 @@ describe('<LDAP />', () => {
     context('when the form is not valid', () => {
       context('when the username is empty', () => {
         const connection = {
-          ldap_username: '',
-          ldap_password: 'password'
+          ldapUsername: '',
+          ldapPassword: 'password'
         };
         const component = mount(
           <LDAP currentConnection={connection} />
@@ -52,8 +52,8 @@ describe('<LDAP />', () => {
 
       context('when the username is null', () => {
         const connection = {
-          ldap_username: null,
-          ldap_password: 'password'
+          ldapUsername: null,
+          ldapPassword: 'password'
         };
         const component = mount(
           <LDAP currentConnection={connection} />
@@ -75,7 +75,7 @@ describe('<LDAP />', () => {
 
       context('when the username is undefined', () => {
         const connection = {
-          ldap_password: 'password'
+          ldapPassword: 'password'
         };
         const component = mount(
           <LDAP currentConnection={connection} />
@@ -97,8 +97,8 @@ describe('<LDAP />', () => {
 
       context('when the password is empty', () => {
         const connection = {
-          ldap_username: 'username',
-          ldap_password: ''
+          ldapUsername: 'username',
+          ldapPassword: ''
         };
         const component = mount(
           <LDAP currentConnection={connection} />
@@ -120,8 +120,8 @@ describe('<LDAP />', () => {
 
       context('when the password is null', () => {
         const connection = {
-          ldap_username: 'username',
-          ldap_password: null
+          ldapUsername: 'username',
+          ldapPassword: null
         };
         const component = mount(
           <LDAP currentConnection={connection} />
@@ -143,7 +143,7 @@ describe('<LDAP />', () => {
 
       context('when the password is undefined', () => {
         const connection = {
-          ldap_username: 'username'
+          ldapUsername: 'username'
         };
         const component = mount(
           <LDAP currentConnection={connection} />

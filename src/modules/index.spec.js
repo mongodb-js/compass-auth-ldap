@@ -19,7 +19,7 @@ describe('Extensions', () => {
     it('changes the username in the store', (done) => {
       const unsubscribe = store.listen((state) => {
         unsubscribe();
-        expect(state.currentConnection.ldap_username).to.equal('test');
+        expect(state.currentConnection.ldapUsername).to.equal('test');
         done();
       });
       Actions.onLDAPUsernameChanged('test');
@@ -30,7 +30,7 @@ describe('Extensions', () => {
     it('changes the password in the store', (done) => {
       const unsubscribe = store.listen((state) => {
         unsubscribe();
-        expect(state.currentConnection.ldap_password).to.equal('pw');
+        expect(state.currentConnection.ldapPassword).to.equal('pw');
         done();
       });
       Actions.onLDAPPasswordChanged('pw');
