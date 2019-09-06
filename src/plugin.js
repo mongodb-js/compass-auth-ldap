@@ -25,7 +25,7 @@ class LDAP extends React.Component {
    * @param {Event} evt - The event.
    */
   onUsernameChanged(evt) {
-    Actions.onLDAPUsernameChanged(evt.target.value);
+    Actions.onLDAPUsernameChanged(evt.target.value.trim());
   }
 
   /**
